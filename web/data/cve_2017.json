@@ -742,7 +742,7 @@
       },
       {
         "cwe": "CWE-20",
-        "count": 1009
+        "count": 1010
       },
       {
         "cwe": "CWE-125",
@@ -825,15 +825,15 @@
     "reference_tags": [
       {
         "tag": "Third Party Advisory",
-        "count": 53172
+        "count": 53155
       },
       {
         "tag": "VDB Entry",
-        "count": 25854
+        "count": 25837
       },
       {
         "tag": "Vendor Advisory",
-        "count": 20361
+        "count": 20353
       },
       {
         "tag": "Patch",
@@ -845,7 +845,7 @@
       },
       {
         "tag": "Exploit",
-        "count": 7210
+        "count": 7208
       },
       {
         "tag": "Mailing List",
@@ -857,7 +857,7 @@
       },
       {
         "tag": "Broken Link",
-        "count": 1324
+        "count": 1312
       },
       {
         "tag": "Mitigation",
@@ -898,7 +898,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-07-29T14:27:36.876406",
+    "processed_at": "2025-08-02T18:19:39.954426",
     "data_source": "data/cache/nvd.jsonl"
   }
 }

@@ -704,11 +704,7 @@
       },
       {
         "status": "Analyzed",
-        "count": 1
-      },
-      {
-        "status": "Undergoing Analysis",
-        "count": 1
+        "count": 2
       }
     ],
     "cve_tags": [],
@@ -719,7 +715,7 @@
       },
       {
         "tag": "Third Party Advisory",
-        "count": 8796
+        "count": 8798
       },
       {
         "tag": "Exploit",
@@ -751,7 +747,7 @@
       },
       {
         "tag": "Not Applicable",
-        "count": 334
+        "count": 340
       },
       {
         "tag": "Issue Tracking",
@@ -788,7 +784,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-07-29T14:26:30.503091",
+    "processed_at": "2025-08-02T18:18:48.226742",
     "data_source": "data/cache/nvd.jsonl"
   }
 }

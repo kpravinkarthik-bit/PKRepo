@@ -1,10 +1,10 @@
 {
-  "generated_at": "2025-07-29T14:30:59.567493",
-  "total_unique_cpes": 354921,
-  "total_cpe_entries": 2274852,
-  "total_cves_with_cpes": 261005,
-  "total_unique_vendors": 34589,
-  "total_unique_products": 107885,
+  "generated_at": "2025-08-02T18:21:48.162154",
+  "total_unique_cpes": 355664,
+  "total_cpe_entries": 2284223,
+  "total_cves_with_cpes": 261686,
+  "total_unique_vendors": 34603,
+  "total_unique_products": 107919,
   "top_cpes": [
     {
       "cpe": "cpe:2.3:o:linux:linux_kernel:*:*:*:*:*:*:*:*",
@@ -22,17 +22,24 @@
     },
     {
       "cpe": "cpe:2.3:o:apple:iphone_os:*:*:*:*:*:*:*:*",
-      "count": 3852,
+      "count": 3877,
       "vendor": "apple",
       "product": "iphone_os",
       "type": "Operating System"
     },
     {
       "cpe": "cpe:2.3:a:google:chrome:*:*:*:*:*:*:*:*",
-      "count": 3686,
+      "count": 3689,
       "vendor": "google",
       "product": "chrome",
       "type": "Application"
+    },
+    {
+      "cpe": "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*",
+      "count": 3487,
+      "vendor": "apple",
+      "product": "macos",
+      "type": "Operating System"
     },
     {
       "cpe": "cpe:2.3:o:debian:debian_linux:8.0:*:*:*:*:*:*:*",
@@ -42,15 +49,8 @@
       "type": "Operating System"
     },
     {
-      "cpe": "cpe:2.3:o:apple:macos:*:*:*:*:*:*:*:*",
-      "count": 3320,
-      "vendor": "apple",
-      "product": "macos",
-      "type": "Operating System"
-    },
-    {
       "cpe": "cpe:2.3:o:debian:debian_linux:10.0:*:*:*:*:*:*:*",
-      "count": 3308,
+      "count": 3309,
       "vendor": "debian",
       "product": "debian_linux",
       "type": "Operating System"
@@ -182,17 +182,17 @@
       "type": "Operating System"
     },
     {
-      "cpe": "cpe:2.3:o:apple:tvos:*:*:*:*:*:*:*:*",
-      "count": 1851,
+      "cpe": "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*",
+      "count": 1876,
       "vendor": "apple",
-      "product": "tvos",
+      "product": "ipados",
       "type": "Operating System"
     },
     {
-      "cpe": "cpe:2.3:o:apple:ipados:*:*:*:*:*:*:*:*",
-      "count": 1837,
+      "cpe": "cpe:2.3:o:apple:tvos:*:*:*:*:*:*:*:*",
+      "count": 1872,
       "vendor": "apple",
-      "product": "ipados",
+      "product": "tvos",
       "type": "Operating System"
     },
     {
@@ -239,7 +239,7 @@
     },
     {
       "cpe": "cpe:2.3:o:apple:watchos:*:*:*:*:*:*:*:*",
-      "count": 1581,
+      "count": 1599,
       "vendor": "apple",
       "product": "watchos",
       "type": "Operating System"
@@ -253,7 +253,7 @@
     },
     {
       "cpe": "cpe:2.3:a:apple:safari:*:*:*:*:*:*:*:*",
-      "count": 1530,
+      "count": 1544,
       "vendor": "apple",
       "product": "safari",
       "type": "Application"
@@ -337,7 +337,7 @@
     },
     {
       "cpe": "cpe:2.3:o:debian:debian_linux:11.0:*:*:*:*:*:*:*",
-      "count": 1283,
+      "count": 1284,
       "vendor": "debian",
       "product": "debian_linux",
       "type": "Operating System"
@@ -364,11 +364,11 @@
     },
     {
       "vendor": "cisco",
-      "count": 164352
+      "count": 172321
     },
     {
       "vendor": "microsoft",
-      "count": 113610
+      "count": 113609
     },
     {
       "vendor": "linux",
@@ -376,7 +376,7 @@
     },
     {
       "vendor": "apple",
-      "count": 90167
+      "count": 90473
     },
     {
       "vendor": "mozilla",
@@ -388,11 +388,11 @@
     },
     {
       "vendor": "ibm",
-      "count": 67175
+      "count": 67192
     },
     {
       "vendor": "oracle",
-      "count": 66429
+      "count": 66430
     },
     {
       "vendor": "juniper",
@@ -400,7 +400,7 @@
     },
     {
       "vendor": "google",
-      "count": 59898
+      "count": 59940
     },
     {
       "vendor": "intel",
@@ -412,7 +412,7 @@
     },
     {
       "vendor": "redhat",
-      "count": 32365
+      "count": 32372
     },
     {
       "vendor": "f5",
@@ -424,11 +424,11 @@
     },
     {
       "vendor": "dell",
-      "count": 28869
+      "count": 28881
     },
     {
       "vendor": "samsung",
-      "count": 26721
+      "count": 26728
     },
     {
       "vendor": "opera",
@@ -446,7 +446,7 @@
     },
     {
       "product": "ios",
-      "count": 66658
+      "count": 66928
     },
     {
       "product": "junos",
@@ -462,7 +462,7 @@
     },
     {
       "product": "chrome",
-      "count": 33915
+      "count": 33918
     },
     {
       "product": "jre",
@@ -470,7 +470,7 @@
     },
     {
       "product": "ios_xe",
-      "count": 25715
+      "count": 28178
     },
     {
       "product": "jdk",
@@ -490,7 +490,7 @@
     },
     {
       "product": "safari",
-      "count": 19224
+      "count": 19238
     },
     {
       "product": "flash_player",
@@ -510,7 +510,7 @@
     },
     {
       "product": "debian_linux",
-      "count": 15430
+      "count": 15432
     },
     {
       "product": "thunderbird",
@@ -524,13 +524,13 @@
   "cpe_type_distribution": [
     {
       "type": "Application",
-      "count": 1216078,
-      "percentage": 53.5
+      "count": 1220494,
+      "percentage": 53.4
     },
     {
       "type": "Operating System",
-      "count": 1003711,
-      "percentage": 44.1
+      "count": 1008666,
+      "percentage": 44.2
     },
     {
       "type": "Hardware",
@@ -584,16 +584,16 @@
       "cpe_count": 1721
     },
     {
+      "cve": "CVE-2022-20920",
+      "cpe_count": 1596
+    },
+    {
       "cve": "CVE-2025-20171",
       "cpe_count": 1579
     },
     {
       "cve": "CVE-2009-5040",
       "cpe_count": 1550
-    },
-    {
-      "cve": "CVE-2022-20920",
-      "cpe_count": 1446
     },
     {
       "cve": "CVE-2007-5381",

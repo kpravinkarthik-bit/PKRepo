@@ -715,7 +715,7 @@
     "top_cwes": [
       {
         "cwe": "CWE-79",
-        "count": 4335
+        "count": 4336
       },
       {
         "cwe": "CWE-787",
@@ -731,7 +731,7 @@
       },
       {
         "cwe": "CWE-20",
-        "count": 1061
+        "count": 1060
       },
       {
         "cwe": "CWE-416",
@@ -747,7 +747,7 @@
       },
       {
         "cwe": "CWE-78",
-        "count": 771
+        "count": 770
       },
       {
         "cwe": "CWE-862",
@@ -799,11 +799,11 @@
     "vulnerability_status": [
       {
         "status": "Modified",
-        "count": 24866
+        "count": 24865
       },
       {
         "status": "Analyzed",
-        "count": 204
+        "count": 205
       },
       {
         "status": "Undergoing Analysis",
@@ -887,7 +887,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-07-29T14:28:12.409228",
+    "processed_at": "2025-08-02T18:20:10.133063",
     "data_source": "data/cache/nvd.jsonl"
   }
 }

@@ -901,7 +901,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-07-29T14:27:45.243090",
+    "processed_at": "2025-08-02T18:19:45.793217",
     "data_source": "data/cache/nvd.jsonl"
   }
 }

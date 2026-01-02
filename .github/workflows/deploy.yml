@@ -24,6 +24,9 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+        fetch-depth: 0
       
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -47,6 +50,9 @@ jobs:
       run: |
         python build.py --quiet
         
+    - name: Copy CNAME for GitHub Pages
+      run: cp CNAME web/CNAME
+      
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       if: github.ref == 'refs/heads/main'
@@ -61,6 +67,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add web/data/*.json
+        git checkout main
+        git add web/
         git diff --staged --quiet || git commit -m "Auto-update CVE data $(date -u +%Y-%m-%d)"
         git push
