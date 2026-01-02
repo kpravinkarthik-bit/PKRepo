@@ -1,12 +1,12 @@
 {
-  "generated_at": "2025-08-02T23:22:19.435574Z",
-  "total_cves": 287648,
-  "years_covered": 27,
-  "current_year": 2025,
-  "current_year_cves": 27579,
-  "peak_year": 2024,
-  "peak_count": 39970,
-  "yoy_growth_rate": -31.0,
+  "generated_at": "2026-01-02T06:26:52.259065Z",
+  "total_cves": 308298,
+  "years_covered": 28,
+  "current_year": 2026,
+  "current_year_cves": 48,
+  "peak_year": 2025,
+  "peak_count": 48185,
+  "yoy_growth_rate": -99.9,
   "yearly_trend": [
     {
       "year": 1999,
@@ -98,7 +98,7 @@
     },
     {
       "year": 2021,
-      "count": 20150
+      "count": 20149
     },
     {
       "year": 2022,
@@ -106,15 +106,19 @@
     },
     {
       "year": 2023,
-      "count": 28818
+      "count": 28817
     },
     {
       "year": 2024,
-      "count": 39970
+      "count": 39968
     },
     {
       "year": 2025,
-      "count": 27579
+      "count": 48185
+    },
+    {
+      "year": 2026,
+      "count": 48
     }
   ]
 }

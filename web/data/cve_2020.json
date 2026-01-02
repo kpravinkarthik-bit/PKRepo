@@ -402,19 +402,19 @@
       "total": 18317,
       "severity_distribution": {
         "MEDIUM": 7546,
-        "HIGH": 7666,
-        "CRITICAL": 2621,
-        "LOW": 484
+        "HIGH": 7664,
+        "CRITICAL": 2622,
+        "LOW": 485
       },
       "score_distribution": {
         "5.3": 740,
         "5.4": 747,
-        "8.8": 1665,
+        "8.8": 1664,
         "5.5": 974,
-        "7.5": 2158,
+        "7.5": 2157,
         "6.1": 1186,
         "7.2": 314,
-        "9.8": 2172,
+        "9.8": 2171,
         "9.1": 214,
         "6.5": 1137,
         "7.8": 2088,
@@ -439,9 +439,9 @@
         "9.3": 19,
         "4.4": 149,
         "4.6": 95,
-        "3.3": 148,
+        "3.3": 149,
         "7.6": 33,
-        "9.6": 64,
+        "9.6": 65,
         "3.5": 42,
         "2.0": 6,
         "2.7": 36,
@@ -466,7 +466,7 @@
         "9.0": 45,
         "6.9": 15,
         "2.9": 1,
-        "10.0": 50,
+        "10.0": 51,
         "5.2": 13,
         "8.3": 37,
         "1.6": 1,
@@ -500,91 +500,18 @@
         "7.3": 1,
         "9.3": 2
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 1366,
+      "epss_gt_0_5": 437,
+      "epss_gt_0_9": 161
     }
   },
+  "kev": {
+    "kev_count": 144
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 7188
-      },
-      {
-        "name": "Microsoft Corporation",
-        "count": 1262
-      },
-      {
-        "name": "Google LLC",
-        "count": 828
-      },
-      {
-        "name": "Oracle Corporation",
-        "count": 811
-      },
-      {
-        "name": "Cisco Systems, Inc.",
-        "count": 756
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 564
-      },
-      {
-        "name": "IBM Corporation",
-        "count": 560
-      },
-      {
-        "name": "GitHub, Inc.",
-        "count": 502
-      },
-      {
-        "name": "Apple Inc.",
-        "count": 463
-      },
-      {
-        "name": "Adobe Inc.",
-        "count": 349
-      },
-      {
-        "name": "QUALCOMM Incorporated",
-        "count": 304
-      },
-      {
-        "name": "US Department of Homeland Security",
-        "count": 280
-      },
-      {
-        "name": "trendmicro.com",
-        "count": 270
-      },
-      {
-        "name": "Intel Corporation",
-        "count": 240
-      },
-      {
-        "name": "googlegroups.com",
-        "count": 235
-      },
-      {
-        "name": "snyk.io",
-        "count": 223
-      },
-      {
-        "name": "sap.com",
-        "count": 218
-      },
-      {
-        "name": "hackerone.com",
-        "count": 206
-      },
-      {
-        "name": "Huawei Technologies Co., Ltd.",
-        "count": 187
-      },
-      {
-        "name": "Mozilla Foundation",
-        "count": 173
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -676,7 +603,7 @@
       },
       {
         "cwe": "CWE-787",
-        "count": 1469
+        "count": 1470
       },
       {
         "cwe": "CWE-20",
@@ -684,7 +611,7 @@
       },
       {
         "cwe": "CWE-125",
-        "count": 756
+        "count": 758
       },
       {
         "cwe": "CWE-78",
@@ -699,11 +626,11 @@
         "count": 503
       },
       {
-        "cwe": "CWE-352",
-        "count": 433
+        "cwe": "CWE-120",
+        "count": 434
       },
       {
-        "cwe": "CWE-120",
+        "cwe": "CWE-352",
         "count": 433
       },
       {
@@ -712,7 +639,7 @@
       },
       {
         "cwe": "CWE-287",
-        "count": 398
+        "count": 397
       },
       {
         "cwe": "CWE-200",
@@ -724,7 +651,7 @@
       },
       {
         "cwe": "CWE-306",
-        "count": 295
+        "count": 296
       },
       {
         "cwe": "CWE-400",
@@ -740,7 +667,7 @@
       },
       {
         "cwe": "CWE-190",
-        "count": 239
+        "count": 240
       },
       {
         "cwe": "CWE-276",
@@ -756,26 +683,30 @@
     "vulnerability_status": [
       {
         "status": "Modified",
-        "count": 18145
+        "count": 18132
       },
       {
         "status": "Analyzed",
-        "count": 177
+        "count": 189
+      },
+      {
+        "status": "Undergoing Analysis",
+        "count": 1
       }
     ],
     "cve_tags": [],
     "reference_tags": [
       {
         "tag": "Third Party Advisory",
-        "count": 43053
+        "count": 43051
       },
       {
         "tag": "Vendor Advisory",
-        "count": 30918
+        "count": 30858
       },
       {
         "tag": "Patch",
-        "count": 12800
+        "count": 12745
       },
       {
         "tag": "Exploit",
@@ -783,7 +714,7 @@
       },
       {
         "tag": "Mailing List",
-        "count": 7990
+        "count": 7996
       },
       {
         "tag": "VDB Entry",
@@ -795,23 +726,23 @@
       },
       {
         "tag": "Issue Tracking",
-        "count": 3102
+        "count": 3104
       },
       {
         "tag": "Permissions Required",
-        "count": 1400
+        "count": 1398
       },
       {
         "tag": "Broken Link",
-        "count": 1350
+        "count": 1380
       },
       {
         "tag": "Product",
-        "count": 1281
+        "count": 1285
       },
       {
         "tag": "US Government Resource",
-        "count": 1054
+        "count": 1198
       },
       {
         "tag": "Mitigation",
@@ -840,7 +771,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:19:58.171166",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:20:42.912924",
+    "data_source": "data/cache/nvd.json"
   }
 }

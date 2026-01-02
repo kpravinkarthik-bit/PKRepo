@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
     <title>About CVE.ICU - Vulnerability Intelligence Platform</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0CE61HN2F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W0CE61HN2F');
+    </script>
     
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +30,13 @@
     <meta name="description" content="CVE.ICU provides comprehensive analysis and visualization of Common Vulnerabilities and Exposures (CVE) data from 1999 to present.">
     <meta name="keywords" content="CVE, vulnerabilities, security, analysis, dashboard, cybersecurity">
     <meta name="author" content="CVE.ICU">
+    
+    <!-- Mobile-specific meta tags -->
+    <meta name="theme-color" content="#0d6efd">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="CVE.ICU">
+    <meta name="format-detection" content="telephone=no">
     
     <!-- Open Graph tags -->
     <meta property="og:title" content="CVE.ICU - CVE Analysis Dashboard">
@@ -41,10 +58,23 @@
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="years.html">Yearly Analysis</a></li>
-                    <li><a href="cna.html">CNA</a></li>
+                    <li class="nav-dropdown">
+                        <a href="cna-hub.html" class="dropdown-toggle">CNA</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cna.html">CNA Intelligence</a></li>
+                            <li><a href="data-quality.html">Name Matching</a></li>
+                        </ul>
+                    </li>
                     <li><a href="cpe.html">CPE</a></li>
                     <li><a href="cwe.html">CWE</a></li>
-                    <li><a href="cvss.html">CVSS</a></li>
+                    <li class="nav-dropdown">
+                        <a href="scoring.html" class="dropdown-toggle">Scoring</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cvss.html">CVSS</a></li>
+                            <li><a href="epss.html">EPSS</a></li>
+                            <li><a href="kev.html">KEV</a></li>
+                        </ul>
+                    </li>
                     <li><a href="growth.html">Growth</a></li>
                     <li><a href="calendar.html">Calendar</a></li>
                 </ul>
@@ -198,6 +228,8 @@
                             <ul class="list-unstyled">
                                 <li class="mb-2"><strong>Primary:</strong> NIST National Vulnerability Database (NVD)</li>
                                 <li class="mb-2"><strong>Secondary:</strong> CVE Project V5 Repository</li>
+                                <li class="mb-2"><strong>Risk Signals:</strong> CISA Known Exploited Vulnerabilities (KEV) catalog</li>
+                                <li class="mb-2"><strong>Likelihood:</strong> FIRST Exploit Prediction Scoring System (EPSS)</li>
                                 <li class="mb-2"><strong>Coverage:</strong> 287,800+ CVEs across 27 years</li>
                                 <li class="mb-0"><strong>Validation:</strong> Multi-source cross-verification</li>
                             </ul>
@@ -250,13 +282,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <ul class="list-unstyled">
-                        <li class="mb-2">✓ <strong>287,800+ CVE entries</strong> across 27 years (1999-2025)</li>
+                        <li class="mb-2">✓ <strong>287,800+ CVE entries</strong> across 28 years (1999-2026)</li>
                         <li class="mb-2">✓ <strong>284,181 CVSS scored</strong> vulnerabilities</li>
                     </ul>
                 </div>
                 <div class="col-md-6">
                     <ul class="list-unstyled">
                         <li class="mb-2">✓ <strong>206,053 CWE classified</strong> weaknesses</li>
+                        <li class="mb-2">✓ <strong>1,463 known exploited CVEs</strong> in the CISA KEV catalog</li>
                         <li class="mb-2">✓ <strong>290 active CNAs</strong> with attribution data</li>
                     </ul>
                 </div>
@@ -812,8 +845,8 @@
             <hr class="my-2">
             <div class="text-center">
                 <small class="text-muted">
-                    &copy; 2025 CVE.ICU • Built by <a href="https://rogolabs.net" target="_blank" class="text-decoration-none">RogoLabs</a><br>
-                    Data updated every 6 hours • CVE coverage: 1999-2025
+                    &copy; 2026 CVE.ICU • Built by <a href="https://rogolabs.net" target="_blank" class="text-decoration-none">RogoLabs</a><br>
+                    Data updated every 6 hours • CVE coverage: 1999-2026
                 </small>
             </div>
         </div>
@@ -864,6 +897,47 @@
     document.addEventListener('DOMContentLoaded', function() {
         loadUniversalTimestamp();
     });
+    </script>
+    
+    <!-- Mobile Navigation Enhancement -->
+    <script>
+        // Enhanced mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    
+                    // Prevent body scroll when menu is open
+                    if (navMenu.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    const isClickInside = navToggle.contains(event.target) || navMenu.contains(event.target);
+                    
+                    if (!isClickInside && navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+                
+                // Close menu when a nav link is clicked
+                const navLinks = navMenu.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
+        });
     </script>
     
     <!-- Custom JavaScript -->
@@ -1044,6 +1118,50 @@
         for (let year = 1999; year <= CURRENT_YEAR; year++) {
             AVAILABLE_YEARS.push(year);
         }
+        
+        // Mobile table enhancement - add touch scroll indicators
+        function enhanceMobileTable(tableContainer) {
+            if (window.innerWidth <= 768 && tableContainer) {
+                const table = tableContainer.querySelector('table');
+                if (table && table.scrollWidth > tableContainer.clientWidth) {
+                    tableContainer.style.overflowX = 'auto';
+                    tableContainer.style.webkitOverflowScrolling = 'touch';
+                    
+                    // Add scroll shadow indicators
+                    tableContainer.addEventListener('scroll', function() {
+                        const scrollLeft = this.scrollLeft;
+                        const maxScroll = this.scrollWidth - this.clientWidth;
+                        
+                        if (scrollLeft > 0) {
+                            this.classList.add('scrolled-left');
+                        } else {
+                            this.classList.remove('scrolled-left');
+                        }
+                        
+                        if (scrollLeft < maxScroll - 1) {
+                            this.classList.add('scrolled-right');
+                        } else {
+                            this.classList.remove('scrolled-right');
+                        }
+                    });
+                }
+            }
+        }
+        
+        // Apply mobile table enhancements on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const tableContainers = document.querySelectorAll('.table-container');
+            tableContainers.forEach(enhanceMobileTable);
+            
+            // Re-apply on window resize
+            let resizeTimer;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() {
+                    tableContainers.forEach(enhanceMobileTable);
+                }, 250);
+            });
+        });
     </script>
     
     

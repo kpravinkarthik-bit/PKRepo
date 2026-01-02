@@ -400,9 +400,7 @@
     "v2.0": {
       "total": 2102,
       "severity_distribution": {
-        "HIGH": 992,
-        "MEDIUM": 968,
-        "LOW": 142
+        "UNKNOWN": 2102
       },
       "score_distribution": {
         "7.2": 138,
@@ -458,19 +456,18 @@
         "3.3": 1,
         "5.3": 1
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 318,
+      "epss_gt_0_5": 56,
+      "epss_gt_0_9": 2
     }
   },
+  "kev": {
+    "kev_count": 1
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 2154
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 2
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -661,11 +658,11 @@
       },
       {
         "tag": "Third Party Advisory",
-        "count": 758
+        "count": 756
       },
       {
         "tag": "Broken Link",
-        "count": 752
+        "count": 750
       },
       {
         "tag": "US Government Resource",
@@ -677,7 +674,7 @@
       },
       {
         "tag": "Mailing List",
-        "count": 122
+        "count": 120
       },
       {
         "tag": "URL Repurposed",
@@ -685,7 +682,7 @@
       },
       {
         "tag": "Issue Tracking",
-        "count": 20
+        "count": 18
       },
       {
         "tag": "Not Applicable",
@@ -702,7 +699,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:18:13.666157",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:16:06.666379",
+    "data_source": "data/cache/nvd.json"
   }
 }

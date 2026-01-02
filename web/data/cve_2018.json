@@ -398,25 +398,25 @@
   },
   "cvss": {
     "v3.0": {
-      "total": 14695,
+      "total": 14677,
       "severity_distribution": {
-        "MEDIUM": 5682,
-        "CRITICAL": 2225,
-        "HIGH": 6571,
+        "MEDIUM": 5677,
+        "CRITICAL": 2221,
+        "HIGH": 6562,
         "LOW": 217
       },
       "score_distribution": {
-        "6.1": 1183,
-        "9.8": 2026,
-        "6.5": 1105,
-        "7.5": 2255,
-        "8.8": 1669,
+        "6.1": 1181,
+        "9.8": 2025,
+        "6.5": 1103,
+        "7.5": 2250,
+        "8.8": 1666,
         "6.9": 4,
         "5.8": 23,
         "7.1": 124,
         "5.4": 639,
         "5.9": 250,
-        "7.8": 1384,
+        "7.8": 1383,
         "5.5": 711,
         "4.3": 319,
         "4.8": 274,
@@ -428,19 +428,19 @@
         "8.4": 30,
         "9.6": 20,
         "5.6": 30,
-        "5.3": 533,
+        "5.3": 532,
         "7.0": 124,
         "4.2": 27,
         "3.7": 55,
         "3.3": 59,
         "5.7": 19,
-        "10.0": 43,
+        "10.0": 42,
         "6.0": 8,
         "8.2": 62,
         "7.4": 67,
         "6.2": 29,
         "7.2": 199,
-        "9.1": 96,
+        "9.1": 94,
         "5.0": 20,
         "4.9": 72,
         "7.7": 25,
@@ -486,22 +486,22 @@
       }
     },
     "v3.1": {
-      "total": 1815,
+      "total": 1833,
       "severity_distribution": {
-        "MEDIUM": 616,
-        "HIGH": 856,
-        "CRITICAL": 322,
+        "MEDIUM": 622,
+        "HIGH": 866,
+        "CRITICAL": 324,
         "LOW": 21
       },
       "score_distribution": {
-        "6.5": 154,
-        "8.8": 190,
-        "6.1": 83,
+        "6.5": 157,
+        "8.8": 193,
+        "6.1": 85,
         "8.1": 77,
-        "9.8": 263,
-        "7.8": 191,
+        "9.8": 262,
+        "7.8": 194,
         "7.1": 8,
-        "7.5": 286,
+        "7.5": 290,
         "5.6": 7,
         "5.5": 78,
         "3.3": 6,
@@ -512,7 +512,7 @@
         "4.3": 24,
         "4.8": 14,
         "4.5": 1,
-        "5.3": 73,
+        "5.3": 74,
         "5.9": 38,
         "8.3": 13,
         "6.8": 14,
@@ -528,12 +528,12 @@
         "7.7": 7,
         "6.6": 6,
         "3.8": 1,
-        "9.1": 13,
+        "9.1": 15,
+        "10.0": 9,
         "3.1": 4,
         "6.3": 4,
         "8.0": 5,
         "4.9": 33,
-        "10.0": 8,
         "5.8": 1,
         "7.6": 2,
         "4.6": 5,
@@ -553,91 +553,18 @@
         "8.4": 1,
         "5.7": 3
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 1439,
+      "epss_gt_0_5": 422,
+      "epss_gt_0_9": 93
     }
   },
+  "kev": {
+    "kev_count": 75
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 7290
-      },
-      {
-        "name": "Cisco Systems, Inc.",
-        "count": 799
-      },
-      {
-        "name": "Oracle Corporation",
-        "count": 707
-      },
-      {
-        "name": "Microsoft Corporation",
-        "count": 703
-      },
-      {
-        "name": "QUALCOMM Incorporated",
-        "count": 670
-      },
-      {
-        "name": "IBM Corporation",
-        "count": 644
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 562
-      },
-      {
-        "name": "hackerone.com",
-        "count": 529
-      },
-      {
-        "name": "Google LLC",
-        "count": 449
-      },
-      {
-        "name": "Adobe Inc.",
-        "count": 387
-      },
-      {
-        "name": "Mozilla Foundation",
-        "count": 350
-      },
-      {
-        "name": "US Department of Homeland Security",
-        "count": 338
-      },
-      {
-        "name": "trendmicro.com",
-        "count": 313
-      },
-      {
-        "name": "hpe.com",
-        "count": 257
-      },
-      {
-        "name": "Huawei Technologies Co., Ltd.",
-        "count": 226
-      },
-      {
-        "name": "Dell EMC",
-        "count": 177
-      },
-      {
-        "name": "Apple Inc.",
-        "count": 177
-      },
-      {
-        "name": "JPCERT/CC",
-        "count": 172
-      },
-      {
-        "name": "Apache Software Foundation",
-        "count": 166
-      },
-      {
-        "name": "sap.com",
-        "count": 129
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Debian",
@@ -689,7 +616,7 @@
       },
       {
         "name": "Hp",
-        "count": 312
+        "count": 311
       },
       {
         "name": "Linux",
@@ -725,7 +652,7 @@
     "top_cwes": [
       {
         "cwe": "CWE-79",
-        "count": 2188
+        "count": 2189
       },
       {
         "cwe": "CWE-20",
@@ -733,7 +660,7 @@
       },
       {
         "cwe": "CWE-200",
-        "count": 1128
+        "count": 1129
       },
       {
         "cwe": "CWE-119",
@@ -741,7 +668,7 @@
       },
       {
         "cwe": "CWE-787",
-        "count": 908
+        "count": 907
       },
       {
         "cwe": "CWE-125",
@@ -753,7 +680,7 @@
       },
       {
         "cwe": "CWE-190",
-        "count": 734
+        "count": 736
       },
       {
         "cwe": "CWE-89",
@@ -773,7 +700,7 @@
       },
       {
         "cwe": "CWE-476",
-        "count": 358
+        "count": 359
       },
       {
         "cwe": "CWE-287",
@@ -789,7 +716,7 @@
       },
       {
         "cwe": "CWE-611",
-        "count": 207
+        "count": 208
       },
       {
         "cwe": "CWE-310",
@@ -809,15 +736,11 @@
     "vulnerability_status": [
       {
         "status": "Modified",
-        "count": 16419
+        "count": 16409
       },
       {
         "status": "Analyzed",
-        "count": 87
-      },
-      {
-        "status": "Undergoing Analysis",
-        "count": 3
+        "count": 100
       },
       {
         "status": "Deferred",
@@ -828,11 +751,11 @@
     "reference_tags": [
       {
         "tag": "Third Party Advisory",
-        "count": 62884
+        "count": 62892
       },
       {
         "tag": "VDB Entry",
-        "count": 23521
+        "count": 23519
       },
       {
         "tag": "Vendor Advisory",
@@ -848,31 +771,31 @@
       },
       {
         "tag": "Issue Tracking",
-        "count": 5110
+        "count": 5112
       },
       {
         "tag": "Mailing List",
-        "count": 4381
+        "count": 4383
       },
       {
         "tag": "Broken Link",
-        "count": 1294
+        "count": 1308
       },
       {
         "tag": "Release Notes",
         "count": 1222
       },
       {
-        "tag": "Mitigation",
-        "count": 1136
+        "tag": "US Government Resource",
+        "count": 1144
       },
       {
-        "tag": "US Government Resource",
-        "count": 1069
+        "tag": "Mitigation",
+        "count": 1138
       },
       {
         "tag": "Permissions Required",
-        "count": 722
+        "count": 724
       },
       {
         "tag": "Technical Description",
@@ -901,7 +824,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:19:45.793217",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:20:11.175818",
+    "data_source": "data/cache/nvd.json"
   }
 }

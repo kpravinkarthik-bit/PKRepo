@@ -398,23 +398,21 @@
   },
   "cvss": {
     "v2.0": {
-      "total": 6458,
+      "total": 6456,
       "severity_distribution": {
-        "MEDIUM": 3088,
-        "HIGH": 3138,
-        "LOW": 232
+        "UNKNOWN": 6456
       },
       "score_distribution": {
         "6.8": 790,
         "7.5": 1500,
         "4.3": 929,
         "5.0": 656,
-        "10.0": 473,
+        "10.0": 472,
         "7.8": 352,
         "6.6": 25,
         "6.5": 87,
         "6.0": 59,
-        "9.3": 441,
+        "9.3": 440,
         "1.9": 21,
         "3.5": 49,
         "6.4": 96,
@@ -471,71 +469,38 @@
       }
     },
     "v3.1": {
-      "total": 57,
+      "total": 59,
       "severity_distribution": {
-        "HIGH": 25,
-        "CRITICAL": 20,
+        "HIGH": 26,
+        "CRITICAL": 21,
         "MEDIUM": 12
       },
       "score_distribution": {
         "7.5": 15,
         "7.8": 6,
-        "9.8": 19,
+        "8.8": 3,
+        "9.8": 20,
         "6.5": 1,
         "5.4": 1,
         "9.1": 1,
         "5.5": 3,
         "6.1": 4,
         "5.3": 2,
-        "8.8": 2,
         "4.6": 1,
         "8.1": 2
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 1202,
+      "epss_gt_0_5": 290,
+      "epss_gt_0_9": 4
     }
   },
+  "kev": {
+    "kev_count": 2
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 6057
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 235
-      },
-      {
-        "name": "Microsoft Corporation",
-        "count": 107
-      },
-      {
-        "name": "CERT Coordination Center",
-        "count": 54
-      },
-      {
-        "name": "flexerasoftware.com",
-        "count": 39
-      },
-      {
-        "name": "Canonical Ltd.",
-        "count": 12
-      },
-      {
-        "name": "freebsd.org",
-        "count": 5
-      },
-      {
-        "name": "Cisco Systems, Inc.",
-        "count": 5
-      },
-      {
-        "name": "bc94ec7e-8909-4cbb-83df-d2fc9330fa88",
-        "count": 1
-      },
-      {
-        "name": "Debian Project",
-        "count": 1
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -627,7 +592,7 @@
       },
       {
         "cwe": "CWE-79",
-        "count": 359
+        "count": 361
       },
       {
         "cwe": "CWE-94",
@@ -707,7 +672,15 @@
     "vulnerability_status": [
       {
         "status": "Deferred",
-        "count": 6516
+        "count": 6512
+      },
+      {
+        "status": "Analyzed",
+        "count": 3
+      },
+      {
+        "status": "Modified",
+        "count": 1
       }
     ],
     "cve_tags": [],
@@ -722,7 +695,7 @@
       },
       {
         "tag": "Third Party Advisory",
-        "count": 5072
+        "count": 5038
       },
       {
         "tag": "Exploit",
@@ -730,7 +703,7 @@
       },
       {
         "tag": "Broken Link",
-        "count": 2156
+        "count": 2118
       },
       {
         "tag": "US Government Resource",
@@ -738,19 +711,19 @@
       },
       {
         "tag": "VDB Entry",
-        "count": 1374
-      },
-      {
-        "tag": "Mailing List",
-        "count": 250
+        "count": 1350
       },
       {
         "tag": "Permissions Required",
         "count": 242
       },
       {
+        "tag": "Mailing List",
+        "count": 240
+      },
+      {
         "tag": "Not Applicable",
-        "count": 186
+        "count": 196
       },
       {
         "tag": "URL Repurposed",
@@ -758,11 +731,11 @@
       },
       {
         "tag": "Issue Tracking",
-        "count": 104
+        "count": 102
       },
       {
         "tag": "Release Notes",
-        "count": 26
+        "count": 28
       },
       {
         "tag": "Technical Description",
@@ -779,7 +752,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:18:41.855863",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:17:22.878434",
+    "data_source": "data/cache/nvd.json"
   }
 }

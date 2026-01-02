@@ -2,8 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
     <title>CVE Year Analysis - CVE.ICU</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W0CE61HN2F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-W0CE61HN2F');
+    </script>
     
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,6 +30,13 @@
     <meta name="description" content="CVE.ICU provides comprehensive analysis and visualization of Common Vulnerabilities and Exposures (CVE) data from 1999 to present.">
     <meta name="keywords" content="CVE, vulnerabilities, security, analysis, dashboard, cybersecurity">
     <meta name="author" content="CVE.ICU">
+    
+    <!-- Mobile-specific meta tags -->
+    <meta name="theme-color" content="#0d6efd">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="CVE.ICU">
+    <meta name="format-detection" content="telephone=no">
     
     <!-- Open Graph tags -->
     <meta property="og:title" content="CVE.ICU - CVE Analysis Dashboard">
@@ -41,10 +58,23 @@
                 <ul class="nav-menu">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="years.html">Yearly Analysis</a></li>
-                    <li><a href="cna.html">CNA</a></li>
+                    <li class="nav-dropdown">
+                        <a href="cna-hub.html" class="dropdown-toggle">CNA</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cna.html">CNA Intelligence</a></li>
+                            <li><a href="data-quality.html">Name Matching</a></li>
+                        </ul>
+                    </li>
                     <li><a href="cpe.html">CPE</a></li>
                     <li><a href="cwe.html">CWE</a></li>
-                    <li><a href="cvss.html">CVSS</a></li>
+                    <li class="nav-dropdown">
+                        <a href="scoring.html" class="dropdown-toggle">Scoring</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="cvss.html">CVSS</a></li>
+                            <li><a href="epss.html">EPSS</a></li>
+                            <li><a href="kev.html">KEV</a></li>
+                        </ul>
+                    </li>
                     <li><a href="growth.html">Growth</a></li>
                     <li><a href="calendar.html">Calendar</a></li>
                 </ul>
@@ -64,7 +94,7 @@
 <div class="page-header mb-4 text-center">
     <h1 class="display-4 mb-2">CVE Year Analysis</h1>
     <small class="text-muted d-block mb-3">
-        Comprehensive analysis of CVE data across 27 years (1999-2025)
+        Comprehensive analysis of CVE data across 28 years (1999-2026)
     </small>
 </div>
 
@@ -230,6 +260,11 @@
             <label class="year-item">
                 <input type="checkbox" value="2025">
                 <span class="year-label">2025</span>
+            </label>
+            
+            <label class="year-item">
+                <input type="checkbox" value="2026">
+                <span class="year-label">2026</span>
             </label>
             
         </div>
@@ -432,8 +467,8 @@
             <hr class="my-2">
             <div class="text-center">
                 <small class="text-muted">
-                    &copy; 2025 CVE.ICU • Built by <a href="https://rogolabs.net" target="_blank" class="text-decoration-none">RogoLabs</a><br>
-                    Data updated every 6 hours • CVE coverage: 1999-2025
+                    &copy; 2026 CVE.ICU • Built by <a href="https://rogolabs.net" target="_blank" class="text-decoration-none">RogoLabs</a><br>
+                    Data updated every 6 hours • CVE coverage: 1999-2026
                 </small>
             </div>
         </div>
@@ -484,6 +519,47 @@
     document.addEventListener('DOMContentLoaded', function() {
         loadUniversalTimestamp();
     });
+    </script>
+    
+    <!-- Mobile Navigation Enhancement -->
+    <script>
+        // Enhanced mobile navigation toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    
+                    // Prevent body scroll when menu is open
+                    if (navMenu.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+                
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    const isClickInside = navToggle.contains(event.target) || navMenu.contains(event.target);
+                    
+                    if (!isClickInside && navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    }
+                });
+                
+                // Close menu when a nav link is clicked
+                const navLinks = navMenu.querySelectorAll('a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
+        });
     </script>
     
     <!-- Custom JavaScript -->
@@ -664,6 +740,50 @@
         for (let year = 1999; year <= CURRENT_YEAR; year++) {
             AVAILABLE_YEARS.push(year);
         }
+        
+        // Mobile table enhancement - add touch scroll indicators
+        function enhanceMobileTable(tableContainer) {
+            if (window.innerWidth <= 768 && tableContainer) {
+                const table = tableContainer.querySelector('table');
+                if (table && table.scrollWidth > tableContainer.clientWidth) {
+                    tableContainer.style.overflowX = 'auto';
+                    tableContainer.style.webkitOverflowScrolling = 'touch';
+                    
+                    // Add scroll shadow indicators
+                    tableContainer.addEventListener('scroll', function() {
+                        const scrollLeft = this.scrollLeft;
+                        const maxScroll = this.scrollWidth - this.clientWidth;
+                        
+                        if (scrollLeft > 0) {
+                            this.classList.add('scrolled-left');
+                        } else {
+                            this.classList.remove('scrolled-left');
+                        }
+                        
+                        if (scrollLeft < maxScroll - 1) {
+                            this.classList.add('scrolled-right');
+                        } else {
+                            this.classList.remove('scrolled-right');
+                        }
+                    });
+                }
+            }
+        }
+        
+        // Apply mobile table enhancements on load
+        document.addEventListener('DOMContentLoaded', function() {
+            const tableContainers = document.querySelectorAll('.table-container');
+            tableContainers.forEach(enhanceMobileTable);
+            
+            // Re-apply on window resize
+            let resizeTimer;
+            window.addEventListener('resize', function() {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(function() {
+                    tableContainers.forEach(enhanceMobileTable);
+                }, 250);
+            });
+        });
     </script>
     
     
@@ -672,6 +792,7 @@
 
 // Global variables
 let yearData = {};
+let cnaAnalysisData = null;  // CNA data from cna_analysis.json
 let selectedYears = [];
 let selectedCvesTotal = 0;
 let totalDays = 0;
@@ -693,7 +814,10 @@ async function initializePage() {
     debugLog('Starting page initialization...');
     
     try {
-        await loadYearData();
+        await Promise.all([
+            loadYearData(),
+            loadCnaAnalysisData()
+        ]);
     
     // Initialize year selector event listeners
     initializeYearSelector();
@@ -725,14 +849,14 @@ async function initializePage() {
 function ensureDefaultYearSelection() {
     debugLog(`Current selectedYears: ${selectedYears}`);
     
-    // ALWAYS reset to just 2025, regardless of what's currently selected
-    const defaultYear = 2025;
+    // ALWAYS reset to just current year, regardless of what's currently selected
+    const defaultYear = 2026;
     debugLog(`Forcing selection to only year: ${defaultYear}`);
     
     const yearCheckbox = document.querySelector(`#yearSelector input[value="${defaultYear}"]`);
     
     if (yearCheckbox) {
-        debugLog('Found 2025 checkbox, clearing all and selecting only 2025...');
+        debugLog(`Found ${defaultYear} checkbox, clearing all and selecting only ${defaultYear}...`);
         
         // Clear ALL selections first
         const allCheckboxes = document.querySelectorAll('#yearSelector input[type="checkbox"]');
@@ -743,7 +867,7 @@ function ensureDefaultYearSelection() {
         // Clear the selectedYears array
         selectedYears = [];
         
-        // Select ONLY 2025
+        // Select ONLY current year
         yearCheckbox.checked = true;
         
         // Update the UI
@@ -760,40 +884,67 @@ function ensureDefaultYearSelection() {
 
 document.addEventListener('DOMContentLoaded', initializePage);
 
-// Load year data from JSON
+// Load year data from consolidated JSON (single request instead of 27)
 async function loadYearData() {
     try {
-        debugLog('Loading summary data...');
-        const summaryResponse = await fetch('data/cve_all.json');
-        if (!summaryResponse.ok) {
-            throw new Error(`Failed to load summary data: ${summaryResponse.status}`);
+        debugLog('Loading yearly summary data...');
+        const response = await fetch('data/yearly_summary.json');
+        if (!response.ok) {
+            throw new Error(`Failed to load yearly summary: ${response.status}`);
         }
-        const summaryData = await summaryResponse.json();
-        debugLog('Summary data loaded successfully');
+        const summary = await response.json();
+        debugLog('Yearly summary loaded successfully');
         
-        // Create year data structure from available years (1999-2025)
-        const availableYears = [];
-        for (let year = 1999; year <= 2025; year++) {
-            availableYears.push(year);
-        }
-        
-        debugLog(`Loading data for ${availableYears.length} years...`);
-        // Load individual year data
-        for (const year of availableYears) {
-            try {
-                const response = await fetch(`data/cve_${year}.json`);
-                if (response.ok) {
-                    const data = await response.json();
-                    yearData[year] = data;
-                }
-            } catch (error) {
-                console.warn(`Could not load data for ${year}:`, error);
+        // Extract year data from the consolidated file
+        if (summary.years) {
+            for (const [year, data] of Object.entries(summary.years)) {
+                yearData[parseInt(year)] = data;
             }
         }
         
-        console.log('Year data loaded:', Object.keys(yearData).length, 'years');
+        console.log('Year data loaded:', Object.keys(yearData).length, 'years (from single file)');
     } catch (error) {
         console.error('Error loading year data:', error);
+        // Fallback to individual files if summary not available
+        await loadYearDataLegacy();
+    }
+}
+
+// Legacy loader for backwards compatibility
+async function loadYearDataLegacy() {
+    console.log('Falling back to individual year files...');
+    const availableYears = [];
+    for (let year = 1999; year <= 2026; year++) {
+        availableYears.push(year);
+    }
+    
+    for (const year of availableYears) {
+        try {
+            const response = await fetch(`data/cve_${year}.json`);
+            if (response.ok) {
+                const data = await response.json();
+                yearData[year] = data;
+            }
+        } catch (error) {
+            console.warn(`Could not load data for ${year}:`, error);
+        }
+    }
+    console.log('Legacy year data loaded:', Object.keys(yearData).length, 'years');
+}
+
+// Load CNA analysis data from CVE V5 processor
+async function loadCnaAnalysisData() {
+    try {
+        debugLog('Loading CNA analysis data...');
+        const response = await fetch('data/cna_analysis.json');
+        if (!response.ok) {
+            throw new Error(`Failed to load CNA analysis: ${response.status}`);
+        }
+        cnaAnalysisData = await response.json();
+        debugLog('CNA analysis loaded successfully', { totalCnas: cnaAnalysisData.cna_list?.length });
+    } catch (error) {
+        console.error('Error loading CNA analysis data:', error);
+        cnaAnalysisData = null;
     }
 }
 
@@ -1307,17 +1458,24 @@ function updateVendorChart() {
         vendorChart.destroy();
     }
     
-    // Aggregate CNA data from selected years
+    // Use CNA analysis data (from CVE V5) which has proper per-year breakdown
     const cnaData = {};
     
-    selectedYears.forEach(year => {
-        const yearVendorData = yearData[year]?.vendors?.cna_assigners || [];
-        yearVendorData.forEach(cna => {
-            if (cna.name && cna.count) {
-                cnaData[cna.name] = (cnaData[cna.name] || 0) + cna.count;
+    if (cnaAnalysisData && cnaAnalysisData.cna_list) {
+        // Aggregate CNA counts for selected years from cves_by_year
+        cnaAnalysisData.cna_list.forEach(cna => {
+            if (cna.cves_by_year) {
+                let totalForSelectedYears = 0;
+                selectedYears.forEach(year => {
+                    // Keys in JSON are strings, so convert year to string
+                    totalForSelectedYears += cna.cves_by_year[String(year)] || 0;
+                });
+                if (totalForSelectedYears > 0) {
+                    cnaData[cna.name] = totalForSelectedYears;
+                }
             }
         });
-    });
+    }
     
     // Sort CNAs by count and take top 15
     const sortedCnas = Object.entries(cnaData)

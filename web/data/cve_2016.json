@@ -401,9 +401,7 @@
     "v2.0": {
       "total": 218,
       "severity_distribution": {
-        "LOW": 35,
-        "MEDIUM": 160,
-        "HIGH": 23
+        "UNKNOWN": 218
       },
       "score_distribution": {
         "1.9": 6,
@@ -444,16 +442,16 @@
       }
     },
     "v3.0": {
-      "total": 5459,
+      "total": 5451,
       "severity_distribution": {
         "MEDIUM": 2084,
-        "HIGH": 2403,
+        "HIGH": 2397,
         "LOW": 179,
-        "CRITICAL": 793
+        "CRITICAL": 791
       },
       "score_distribution": {
         "6.8": 36,
-        "7.8": 710,
+        "7.8": 709,
         "5.3": 223,
         "5.4": 183,
         "7.4": 43,
@@ -465,7 +463,7 @@
         "8.0": 15,
         "8.5": 6,
         "7.0": 36,
-        "8.8": 494,
+        "8.8": 493,
         "7.7": 15,
         "5.5": 354,
         "10.0": 16,
@@ -473,7 +471,7 @@
         "6.1": 360,
         "2.5": 11,
         "4.7": 40,
-        "7.5": 673,
+        "7.5": 670,
         "5.6": 7,
         "5.0": 17,
         "3.3": 55,
@@ -483,8 +481,8 @@
         "6.6": 18,
         "6.2": 29,
         "8.6": 59,
-        "8.1": 111,
-        "9.1": 52,
+        "8.1": 110,
+        "9.1": 50,
         "9.0": 5,
         "8.3": 9,
         "6.3": 28,
@@ -528,11 +526,11 @@
       }
     },
     "v3.1": {
-      "total": 772,
+      "total": 780,
       "severity_distribution": {
-        "CRITICAL": 94,
-        "HIGH": 470,
-        "MEDIUM": 201,
+        "CRITICAL": 96,
+        "HIGH": 475,
+        "MEDIUM": 202,
         "LOW": 7
       },
       "score_distribution": {
@@ -541,23 +539,23 @@
         "8.6": 5,
         "8.2": 2,
         "6.1": 20,
-        "8.8": 240,
+        "8.8": 241,
         "7.3": 11,
-        "6.5": 48,
+        "6.5": 49,
         "5.9": 10,
         "8.4": 5,
         "7.7": 2,
         "5.4": 3,
-        "7.5": 67,
-        "7.8": 105,
+        "7.5": 69,
+        "7.8": 106,
         "6.2": 1,
         "3.3": 4,
         "5.3": 13,
         "5.1": 2,
         "6.8": 4,
         "5.5": 25,
-        "9.1": 5,
-        "8.1": 12,
+        "8.1": 13,
+        "9.1": 7,
         "4.3": 6,
         "6.0": 28,
         "4.7": 1,
@@ -580,91 +578,18 @@
         "4.9": 10,
         "7.1": 1
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 774,
+      "epss_gt_0_5": 195,
+      "epss_gt_0_9": 26
     }
   },
+  "kev": {
+    "kev_count": 53
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 1639
-      },
-      {
-        "name": "Google LLC",
-        "count": 689
-      },
-      {
-        "name": "Oracle Corporation",
-        "count": 667
-      },
-      {
-        "name": "Adobe Inc.",
-        "count": 547
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 537
-      },
-      {
-        "name": "Microsoft Corporation",
-        "count": 461
-      },
-      {
-        "name": "IBM Corporation",
-        "count": 368
-      },
-      {
-        "name": "Cisco Systems, Inc.",
-        "count": 368
-      },
-      {
-        "name": "Apple Inc.",
-        "count": 303
-      },
-      {
-        "name": "Mozilla Foundation",
-        "count": 134
-      },
-      {
-        "name": "US Department of Homeland Security",
-        "count": 130
-      },
-      {
-        "name": "CERT Coordination Center",
-        "count": 124
-      },
-      {
-        "name": "JPCERT/CC",
-        "count": 112
-      },
-      {
-        "name": "Debian Project",
-        "count": 87
-      },
-      {
-        "name": "OpenText Corporation",
-        "count": 65
-      },
-      {
-        "name": "Dell EMC",
-        "count": 63
-      },
-      {
-        "name": "NortonLifeLock Inc.",
-        "count": 41
-      },
-      {
-        "name": "NVIDIA Corporation",
-        "count": 40
-      },
-      {
-        "name": "Canonical Ltd.",
-        "count": 14
-      },
-      {
-        "name": "HP Inc.",
-        "count": 8
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -732,7 +657,7 @@
       },
       {
         "name": "Hp",
-        "count": 115
+        "count": 114
       },
       {
         "name": "Apache",
@@ -788,7 +713,7 @@
       },
       {
         "cwe": "CWE-416",
-        "count": 161
+        "count": 162
       },
       {
         "cwe": "CWE-89",
@@ -808,7 +733,7 @@
       },
       {
         "cwe": "CWE-22",
-        "count": 80
+        "count": 81
       },
       {
         "cwe": "CWE-190",
@@ -847,11 +772,11 @@
     "reference_tags": [
       {
         "tag": "Third Party Advisory",
-        "count": 20025
+        "count": 20013
       },
       {
         "tag": "Vendor Advisory",
-        "count": 13319
+        "count": 13312
       },
       {
         "tag": "VDB Entry",
@@ -859,15 +784,15 @@
       },
       {
         "tag": "Patch",
-        "count": 6252
+        "count": 6250
       },
       {
         "tag": "Mailing List",
-        "count": 4640
+        "count": 4636
       },
       {
         "tag": "Issue Tracking",
-        "count": 2236
+        "count": 2232
       },
       {
         "tag": "Broken Link",
@@ -883,7 +808,7 @@
       },
       {
         "tag": "US Government Resource",
-        "count": 592
+        "count": 590
       },
       {
         "tag": "Mitigation",
@@ -916,7 +841,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:19:34.100364",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:19:40.610134",
+    "data_source": "data/cache/nvd.json"
   }
 }

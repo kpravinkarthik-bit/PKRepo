@@ -400,9 +400,7 @@
     "v2.0": {
       "total": 4868,
       "severity_distribution": {
-        "MEDIUM": 2407,
-        "HIGH": 2022,
-        "LOW": 439
+        "UNKNOWN": 4868
       },
       "score_distribution": {
         "4.3": 685,
@@ -478,39 +476,18 @@
         "6.3": 1,
         "7.1": 1
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 523,
+      "epss_gt_0_5": 138,
+      "epss_gt_0_9": 3
     }
   },
+  "kev": {
+    "kev_count": 1
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 4495
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 257
-      },
-      {
-        "name": "Debian Project",
-        "count": 107
-      },
-      {
-        "name": "Microsoft Corporation",
-        "count": 49
-      },
-      {
-        "name": "CERT Coordination Center",
-        "count": 17
-      },
-      {
-        "name": "freebsd.org",
-        "count": 6
-      },
-      {
-        "name": "bc94ec7e-8909-4cbb-83df-d2fc9330fa88",
-        "count": 1
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -701,19 +678,19 @@
       },
       {
         "tag": "Third Party Advisory",
-        "count": 2080
+        "count": 2062
       },
       {
         "tag": "Broken Link",
-        "count": 1362
+        "count": 1344
       },
       {
         "tag": "US Government Resource",
-        "count": 946
+        "count": 942
       },
       {
         "tag": "VDB Entry",
-        "count": 616
+        "count": 602
       },
       {
         "tag": "URL Repurposed",
@@ -721,7 +698,7 @@
       },
       {
         "tag": "Mailing List",
-        "count": 280
+        "count": 276
       },
       {
         "tag": "Permissions Required",
@@ -733,7 +710,7 @@
       },
       {
         "tag": "Issue Tracking",
-        "count": 52
+        "count": 50
       },
       {
         "tag": "Product",
@@ -758,7 +735,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:18:30.476984",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:16:52.265004",
+    "data_source": "data/cache/nvd.json"
   }
 }

@@ -398,18 +398,16 @@
   },
   "cvss": {
     "v2.0": {
-      "total": 4093,
+      "total": 4092,
       "severity_distribution": {
-        "MEDIUM": 2088,
-        "LOW": 261,
-        "HIGH": 1744
+        "UNKNOWN": 4092
       },
       "score_distribution": {
         "5.0": 608,
         "4.9": 44,
         "2.1": 69,
         "1.9": 21,
-        "9.3": 473,
+        "9.3": 472,
         "4.7": 12,
         "7.8": 110,
         "4.3": 679,
@@ -478,9 +476,9 @@
       }
     },
     "v3.1": {
-      "total": 54,
+      "total": 55,
       "severity_distribution": {
-        "HIGH": 38,
+        "HIGH": 39,
         "MEDIUM": 11,
         "CRITICAL": 5
       },
@@ -491,7 +489,7 @@
         "7.5": 11,
         "7.4": 1,
         "7.8": 12,
-        "8.8": 6,
+        "8.8": 7,
         "9.8": 5,
         "8.4": 4,
         "7.7": 1,
@@ -502,71 +500,18 @@
         "7.3": 1,
         "5.7": 1
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 589,
+      "epss_gt_0_5": 194,
+      "epss_gt_0_9": 9
     }
   },
+  "kev": {
+    "kev_count": 9
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 2086
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 515
-      },
-      {
-        "name": "Oracle Corporation",
-        "count": 307
-      },
-      {
-        "name": "Microsoft Corporation",
-        "count": 221
-      },
-      {
-        "name": "Apple Inc.",
-        "count": 211
-      },
-      {
-        "name": "Adobe Inc.",
-        "count": 181
-      },
-      {
-        "name": "Google LLC",
-        "count": 165
-      },
-      {
-        "name": "Cisco Systems, Inc.",
-        "count": 133
-      },
-      {
-        "name": "HP Inc.",
-        "count": 125
-      },
-      {
-        "name": "JPCERT/CC",
-        "count": 76
-      },
-      {
-        "name": "CERT Coordination Center",
-        "count": 58
-      },
-      {
-        "name": "flexerasoftware.com",
-        "count": 30
-      },
-      {
-        "name": "Dell EMC",
-        "count": 24
-      },
-      {
-        "name": "Canonical Ltd.",
-        "count": 15
-      },
-      {
-        "name": "freebsd.org",
-        "count": 3
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -745,31 +690,31 @@
     "reference_tags": [
       {
         "tag": "Vendor Advisory",
-        "count": 8325
+        "count": 8153
       },
       {
         "tag": "Patch",
-        "count": 5460
+        "count": 5450
       },
       {
         "tag": "Third Party Advisory",
-        "count": 4526
+        "count": 4484
       },
       {
         "tag": "Exploit",
         "count": 3818
       },
       {
-        "tag": "Mailing List",
-        "count": 1204
-      },
-      {
         "tag": "US Government Resource",
         "count": 1154
       },
       {
+        "tag": "Mailing List",
+        "count": 1152
+      },
+      {
         "tag": "Broken Link",
-        "count": 1116
+        "count": 1112
       },
       {
         "tag": "VDB Entry",
@@ -777,7 +722,7 @@
       },
       {
         "tag": "Issue Tracking",
-        "count": 556
+        "count": 520
       },
       {
         "tag": "Permissions Required",
@@ -814,7 +759,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:19:05.448356",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:18:24.756946",
+    "data_source": "data/cache/nvd.json"
   }
 }

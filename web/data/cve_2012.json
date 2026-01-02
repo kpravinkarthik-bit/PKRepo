@@ -399,14 +399,12 @@
   },
   "cvss": {
     "v2.0": {
-      "total": 5177,
+      "total": 5176,
       "severity_distribution": {
-        "MEDIUM": 2994,
-        "HIGH": 1673,
-        "LOW": 510
+        "UNKNOWN": 5176
       },
       "score_distribution": {
-        "4.3": 948,
+        "4.3": 947,
         "6.8": 467,
         "4.6": 29,
         "4.0": 196,
@@ -477,11 +475,11 @@
       }
     },
     "v3.1": {
-      "total": 110,
+      "total": 111,
       "severity_distribution": {
         "CRITICAL": 21,
         "HIGH": 49,
-        "MEDIUM": 40
+        "MEDIUM": 41
       },
       "score_distribution": {
         "9.8": 14,
@@ -497,7 +495,7 @@
         "5.5": 17,
         "9.1": 4,
         "6.0": 1,
-        "6.5": 6,
+        "6.5": 7,
         "7.4": 4,
         "5.8": 1,
         "5.3": 2,
@@ -510,79 +508,18 @@
         "4.7": 1,
         "9.0": 1
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 594,
+      "epss_gt_0_5": 240,
+      "epss_gt_0_9": 20
     }
   },
+  "kev": {
+    "kev_count": 21
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 2107
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 1156
-      },
-      {
-        "name": "Oracle Corporation",
-        "count": 406
-      },
-      {
-        "name": "Apple Inc.",
-        "count": 281
-      },
-      {
-        "name": "CERT Coordination Center",
-        "count": 231
-      },
-      {
-        "name": "Google LLC",
-        "count": 194
-      },
-      {
-        "name": "Cisco Systems, Inc.",
-        "count": 159
-      },
-      {
-        "name": "IBM Corporation",
-        "count": 151
-      },
-      {
-        "name": "Microsoft Corporation",
-        "count": 148
-      },
-      {
-        "name": "Adobe Inc.",
-        "count": 136
-      },
-      {
-        "name": "JPCERT/CC",
-        "count": 93
-      },
-      {
-        "name": "HP Inc.",
-        "count": 75
-      },
-      {
-        "name": "US Department of Homeland Security",
-        "count": 49
-      },
-      {
-        "name": "Dell EMC",
-        "count": 37
-      },
-      {
-        "name": "flexerasoftware.com",
-        "count": 25
-      },
-      {
-        "name": "Debian Project",
-        "count": 23
-      },
-      {
-        "name": "Canonical Ltd.",
-        "count": 17
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Apple",
@@ -754,42 +691,42 @@
     "vulnerability_status": [
       {
         "status": "Deferred",
-        "count": 5287
+        "count": 5284
       },
       {
         "status": "Analyzed",
-        "count": 1
+        "count": 4
       }
     ],
     "cve_tags": [],
     "reference_tags": [
       {
         "tag": "Vendor Advisory",
-        "count": 9464
+        "count": 9374
       },
       {
         "tag": "Third Party Advisory",
-        "count": 7314
+        "count": 7302
       },
       {
         "tag": "Exploit",
-        "count": 3968
+        "count": 3970
       },
       {
         "tag": "Patch",
-        "count": 3688
+        "count": 3674
       },
       {
         "tag": "Mailing List",
-        "count": 1796
+        "count": 1760
       },
       {
         "tag": "VDB Entry",
-        "count": 1550
+        "count": 1552
       },
       {
         "tag": "Broken Link",
-        "count": 1332
+        "count": 1358
       },
       {
         "tag": "US Government Resource",
@@ -797,7 +734,7 @@
       },
       {
         "tag": "Issue Tracking",
-        "count": 546
+        "count": 524
       },
       {
         "tag": "Not Applicable",
@@ -809,7 +746,7 @@
       },
       {
         "tag": "Permissions Required",
-        "count": 50
+        "count": 56
       },
       {
         "tag": "URL Repurposed",
@@ -838,7 +775,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:19:11.197356",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:18:39.975058",
+    "data_source": "data/cache/nvd.json"
   }
 }

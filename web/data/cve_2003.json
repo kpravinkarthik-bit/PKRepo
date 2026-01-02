@@ -400,9 +400,7 @@
     "v2.0": {
       "total": 1510,
       "severity_distribution": {
-        "HIGH": 668,
-        "MEDIUM": 745,
-        "LOW": 97
+        "UNKNOWN": 1510
       },
       "score_distribution": {
         "7.5": 402,
@@ -460,19 +458,18 @@
         "7.1": 1,
         "6.5": 1
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 229,
+      "epss_gt_0_5": 60,
+      "epss_gt_0_9": 1
     }
   },
+  "kev": {
+    "kev_count": 0
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 1523
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 4
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -708,7 +705,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:18:19.234128",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:16:21.829373",
+    "data_source": "data/cache/nvd.json"
   }
 }

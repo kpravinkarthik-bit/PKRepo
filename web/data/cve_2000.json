@@ -401,9 +401,7 @@
     "v2.0": {
       "total": 1009,
       "severity_distribution": {
-        "HIGH": 449,
-        "LOW": 96,
-        "MEDIUM": 464
+        "UNKNOWN": 1009
       },
       "score_distribution": {
         "7.2": 130,
@@ -447,15 +445,18 @@
         "5.5": 3,
         "7.5": 4
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 137,
+      "epss_gt_0_5": 28,
+      "epss_gt_0_9": 1
     }
   },
+  "kev": {
+    "kev_count": 0
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 1019
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -667,7 +668,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:18:02.536397",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:15:36.453313",
+    "data_source": "data/cache/nvd.json"
   }
 }

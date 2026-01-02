@@ -398,18 +398,16 @@
   },
   "cvss": {
     "v2.0": {
-      "total": 5106,
+      "total": 5104,
       "severity_distribution": {
-        "MEDIUM": 2900,
-        "HIGH": 1688,
-        "LOW": 518
+        "UNKNOWN": 5104
       },
       "score_distribution": {
         "4.3": 871,
         "5.0": 554,
         "5.8": 123,
         "7.5": 400,
-        "9.3": 404,
+        "9.3": 402,
         "4.6": 49,
         "10.0": 425,
         "5.1": 24,
@@ -482,17 +480,17 @@
       }
     },
     "v3.1": {
-      "total": 78,
+      "total": 80,
       "severity_distribution": {
         "CRITICAL": 22,
-        "HIGH": 42,
+        "HIGH": 44,
         "MEDIUM": 13,
         "LOW": 1
       },
       "score_distribution": {
         "9.8": 18,
         "7.5": 7,
-        "8.8": 10,
+        "8.8": 12,
         "5.4": 2,
         "5.5": 5,
         "10.0": 1,
@@ -513,87 +511,18 @@
         "7.3": 1,
         "6.1": 1
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 678,
+      "epss_gt_0_5": 267,
+      "epss_gt_0_9": 27
     }
   },
+  "kev": {
+    "kev_count": 35
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 1234
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 970
-      },
-      {
-        "name": "Oracle Corporation",
-        "count": 525
-      },
-      {
-        "name": "Cisco Systems, Inc.",
-        "count": 432
-      },
-      {
-        "name": "IBM Corporation",
-        "count": 388
-      },
-      {
-        "name": "Microsoft Corporation",
-        "count": 321
-      },
-      {
-        "name": "Google LLC",
-        "count": 219
-      },
-      {
-        "name": "Apple Inc.",
-        "count": 173
-      },
-      {
-        "name": "Mozilla Foundation",
-        "count": 158
-      },
-      {
-        "name": "Adobe Inc.",
-        "count": 142
-      },
-      {
-        "name": "HP Inc.",
-        "count": 134
-      },
-      {
-        "name": "JPCERT/CC",
-        "count": 120
-      },
-      {
-        "name": "US Department of Homeland Security",
-        "count": 112
-      },
-      {
-        "name": "CERT Coordination Center",
-        "count": 111
-      },
-      {
-        "name": "Dell EMC",
-        "count": 50
-      },
-      {
-        "name": "flexerasoftware.com",
-        "count": 40
-      },
-      {
-        "name": "NortonLifeLock Inc.",
-        "count": 22
-      },
-      {
-        "name": "Debian Project",
-        "count": 19
-      },
-      {
-        "name": "Canonical Ltd.",
-        "count": 17
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -741,7 +670,7 @@
       },
       {
         "cwe": "CWE-416",
-        "count": 44
+        "count": 45
       },
       {
         "cwe": "CWE-78",
@@ -749,7 +678,7 @@
       },
       {
         "cwe": "CWE-787",
-        "count": 22
+        "count": 23
       },
       {
         "cwe": "CWE-59",
@@ -772,15 +701,15 @@
     "reference_tags": [
       {
         "tag": "Vendor Advisory",
-        "count": 9509
+        "count": 9211
       },
       {
         "tag": "Third Party Advisory",
-        "count": 5276
+        "count": 5242
       },
       {
         "tag": "Patch",
-        "count": 2920
+        "count": 2918
       },
       {
         "tag": "Exploit",
@@ -792,7 +721,7 @@
       },
       {
         "tag": "Mailing List",
-        "count": 1524
+        "count": 1498
       },
       {
         "tag": "VDB Entry",
@@ -800,11 +729,11 @@
       },
       {
         "tag": "Broken Link",
-        "count": 734
+        "count": 706
       },
       {
         "tag": "Issue Tracking",
-        "count": 460
+        "count": 454
       },
       {
         "tag": "Not Applicable",
@@ -845,7 +774,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:19:16.838088",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:18:55.108550",
+    "data_source": "data/cache/nvd.json"
   }
 }

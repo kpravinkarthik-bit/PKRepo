@@ -398,30 +398,28 @@
   },
   "cvss": {
     "v2.0": {
-      "total": 6277,
+      "total": 6275,
       "severity_distribution": {
-        "MEDIUM": 3450,
-        "HIGH": 2244,
-        "LOW": 583
+        "UNKNOWN": 6275
       },
       "score_distribution": {
         "4.3": 956,
-        "7.5": 624,
-        "9.3": 436,
-        "6.4": 78,
-        "6.8": 725,
-        "5.0": 792,
+        "7.5": 622,
+        "9.3": 434,
+        "6.4": 79,
+        "6.8": 727,
+        "5.0": 789,
         "3.5": 253,
         "6.5": 164,
         "5.8": 89,
-        "10.0": 582,
-        "7.8": 162,
+        "10.0": 585,
+        "7.8": 160,
         "5.1": 12,
         "2.6": 37,
         "4.0": 254,
-        "2.1": 181,
+        "2.1": 180,
         "5.5": 37,
-        "6.9": 90,
+        "6.9": 89,
         "9.0": 74,
         "4.9": 75,
         "7.2": 248,
@@ -432,11 +430,11 @@
         "7.1": 49,
         "5.7": 5,
         "4.6": 55,
+        "6.6": 11,
         "5.4": 8,
-        "6.6": 10,
         "6.3": 7,
         "3.2": 6,
-        "7.6": 7,
+        "7.6": 9,
         "4.4": 16,
         "6.0": 30,
         "9.4": 5,
@@ -513,20 +511,20 @@
       }
     },
     "v3.1": {
-      "total": 78,
+      "total": 80,
       "severity_distribution": {
         "MEDIUM": 10,
-        "HIGH": 43,
+        "HIGH": 45,
         "CRITICAL": 25
       },
       "score_distribution": {
         "5.4": 2,
         "8.8": 13,
-        "7.8": 11,
+        "7.8": 12,
         "9.8": 23,
         "6.5": 1,
         "7.3": 2,
-        "7.5": 13,
+        "7.5": 14,
         "9.1": 1,
         "4.8": 1,
         "6.0": 1,
@@ -539,91 +537,18 @@
         "6.7": 1,
         "7.2": 1
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 970,
+      "epss_gt_0_5": 242,
+      "epss_gt_0_9": 27
     }
   },
+  "kev": {
+    "kev_count": 43
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 2031
-      },
-      {
-        "name": "Apple Inc.",
-        "count": 612
-      },
-      {
-        "name": "Microsoft Corporation",
-        "count": 526
-      },
-      {
-        "name": "Cisco Systems, Inc.",
-        "count": 489
-      },
-      {
-        "name": "Oracle Corporation",
-        "count": 483
-      },
-      {
-        "name": "Adobe Inc.",
-        "count": 481
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 400
-      },
-      {
-        "name": "IBM Corporation",
-        "count": 309
-      },
-      {
-        "name": "Google LLC",
-        "count": 260
-      },
-      {
-        "name": "Mozilla Foundation",
-        "count": 185
-      },
-      {
-        "name": "CERT Coordination Center",
-        "count": 154
-      },
-      {
-        "name": "JPCERT/CC",
-        "count": 154
-      },
-      {
-        "name": "US Department of Homeland Security",
-        "count": 145
-      },
-      {
-        "name": "HP Inc.",
-        "count": 81
-      },
-      {
-        "name": "Dell EMC",
-        "count": 79
-      },
-      {
-        "name": "Debian Project",
-        "count": 42
-      },
-      {
-        "name": "NortonLifeLock Inc.",
-        "count": 33
-      },
-      {
-        "name": "Canonical Ltd.",
-        "count": 21
-      },
-      {
-        "name": "OpenText Corporation",
-        "count": 8
-      },
-      {
-        "name": "trendmicro.com",
-        "count": 1
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Apple",
@@ -683,7 +608,7 @@
       },
       {
         "name": "Hp",
-        "count": 112
+        "count": 111
       },
       {
         "name": "Suse",
@@ -711,7 +636,7 @@
     "top_cwes": [
       {
         "cwe": "CWE-119",
-        "count": 964
+        "count": 965
       },
       {
         "cwe": "CWE-79",
@@ -802,43 +727,43 @@
     "reference_tags": [
       {
         "tag": "Vendor Advisory",
-        "count": 14253
+        "count": 14190
       },
       {
         "tag": "Third Party Advisory",
-        "count": 11842
+        "count": 11782
       },
       {
         "tag": "Patch",
-        "count": 4662
+        "count": 4646
       },
       {
         "tag": "VDB Entry",
-        "count": 4118
+        "count": 4112
       },
       {
         "tag": "Exploit",
-        "count": 3638
+        "count": 3636
       },
       {
         "tag": "Mailing List",
-        "count": 1832
+        "count": 1810
       },
       {
         "tag": "US Government Resource",
-        "count": 772
+        "count": 758
       },
       {
         "tag": "Issue Tracking",
-        "count": 584
+        "count": 570
       },
       {
         "tag": "Broken Link",
-        "count": 516
+        "count": 500
       },
       {
         "tag": "Not Applicable",
-        "count": 102
+        "count": 94
       },
       {
         "tag": "Release Notes",
@@ -871,7 +796,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:19:28.366795",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:19:25.452753",
+    "data_source": "data/cache/nvd.json"
   }
 }

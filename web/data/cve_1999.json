@@ -398,11 +398,9 @@
   },
   "cvss": {
     "v2.0": {
-      "total": 887,
+      "total": 886,
       "severity_distribution": {
-        "HIGH": 419,
-        "MEDIUM": 355,
-        "LOW": 113
+        "UNKNOWN": 886
       },
       "score_distribution": {
         "10.0": 157,
@@ -417,7 +415,7 @@
         "4.9": 1,
         "2.1": 69,
         "7.8": 7,
-        "2.6": 16,
+        "2.6": 15,
         "6.2": 4,
         "9.3": 3,
         "1.2": 4,
@@ -431,27 +429,31 @@
       }
     },
     "v3.1": {
-      "total": 7,
+      "total": 8,
       "severity_distribution": {
-        "HIGH": 3,
+        "HIGH": 4,
         "CRITICAL": 3,
         "MEDIUM": 1
       },
       "score_distribution": {
         "7.5": 2,
         "9.8": 3,
+        "8.2": 1,
         "7.8": 1,
         "5.5": 1
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 112,
+      "epss_gt_0_5": 16,
+      "epss_gt_0_9": 0
     }
   },
+  "kev": {
+    "kev_count": 0
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 894
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -538,12 +540,12 @@
   "cwe": {
     "top_cwes": [
       {
-        "cwe": "CWE-20",
+        "cwe": "CWE-200",
         "count": 8
       },
       {
-        "cwe": "CWE-200",
-        "count": 7
+        "cwe": "CWE-20",
+        "count": 8
       },
       {
         "cwe": "CWE-16",
@@ -663,7 +665,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:17:57.027621",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:15:21.315514",
+    "data_source": "data/cache/nvd.json"
   }
 }

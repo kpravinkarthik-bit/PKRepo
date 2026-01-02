@@ -401,9 +401,7 @@
     "v2.0": {
       "total": 2407,
       "severity_distribution": {
-        "HIGH": 948,
-        "MEDIUM": 1256,
-        "LOW": 203
+        "UNKNOWN": 2407
       },
       "score_distribution": {
         "7.5": 574,
@@ -475,23 +473,18 @@
         "5.3": 1,
         "8.4": 1
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 380,
+      "epss_gt_0_5": 100,
+      "epss_gt_0_9": 1
     }
   },
+  "kev": {
+    "kev_count": 2
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 2447
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 3
-      },
-      {
-        "name": "Canonical Ltd.",
-        "count": 1
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -690,7 +683,7 @@
       },
       {
         "tag": "Broken Link",
-        "count": 1054
+        "count": 1052
       },
       {
         "tag": "US Government Resource",
@@ -739,7 +732,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:18:24.811569",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:16:37.012204",
+    "data_source": "data/cache/nvd.json"
   }
 }

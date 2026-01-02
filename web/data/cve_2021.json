@@ -1,6 +1,6 @@
 {
   "year": 2021,
-  "total_cves": 20150,
+  "total_cves": 20149,
   "date_data": {
     "monthly_distribution": {
       "1": 1524,
@@ -12,7 +12,7 @@
       "7": 1582,
       "8": 2085,
       "9": 1902,
-      "10": 1702,
+      "10": 1701,
       "11": 1508,
       "12": 1942
     },
@@ -329,7 +329,7 @@
         "2021-10-26": 43,
         "2021-10-27": 70,
         "2021-10-28": 105,
-        "2021-10-29": 32,
+        "2021-10-29": 31,
         "2021-10-30": 1,
         "2021-10-31": 11,
         "2021-11-01": 69,
@@ -425,16 +425,16 @@
       }
     },
     "v3.1": {
-      "total": 20039,
+      "total": 20038,
       "severity_distribution": {
-        "HIGH": 8402,
+        "HIGH": 8401,
         "CRITICAL": 2551,
         "MEDIUM": 8455,
         "LOW": 631
       },
       "score_distribution": {
-        "7.5": 2143,
-        "9.8": 1905,
+        "7.5": 2142,
+        "9.8": 1904,
         "8.8": 1698,
         "6.5": 1311,
         "4.3": 558,
@@ -443,7 +443,7 @@
         "7.4": 97,
         "10.0": 83,
         "9.6": 139,
-        "9.0": 48,
+        "9.0": 49,
         "6.1": 1260,
         "5.5": 1224,
         "7.8": 2195,
@@ -457,7 +457,7 @@
         "3.1": 43,
         "8.2": 170,
         "5.1": 15,
-        "5.3": 716,
+        "5.3": 715,
         "9.1": 286,
         "7.7": 74,
         "8.1": 467,
@@ -503,7 +503,7 @@
         "3.6": 5,
         "2.6": 10,
         "2.2": 3,
-        "5.2": 18,
+        "5.2": 19,
         "3.0": 3,
         "2.8": 2,
         "2.1": 1,
@@ -527,95 +527,22 @@
         "8.7": 4,
         "6.9": 1
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 1175,
+      "epss_gt_0_5": 483,
+      "epss_gt_0_9": 165
     }
   },
+  "kev": {
+    "kev_count": 208
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 6442
-      },
-      {
-        "name": "GitHub, Inc.",
-        "count": 1076
-      },
-      {
-        "name": "Google LLC",
-        "count": 923
-      },
-      {
-        "name": "Microsoft Corporation",
-        "count": 871
-      },
-      {
-        "name": "Cisco Systems, Inc.",
-        "count": 858
-      },
-      {
-        "name": "wpscan.com",
-        "count": 747
-      },
-      {
-        "name": "IBM Corporation",
-        "count": 605
-      },
-      {
-        "name": "Oracle Corporation",
-        "count": 586
-      },
-      {
-        "name": "Apple Inc.",
-        "count": 561
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 452
-      },
-      {
-        "name": "Adobe Inc.",
-        "count": 431
-      },
-      {
-        "name": "Huawei Technologies Co., Ltd.",
-        "count": 327
-      },
-      {
-        "name": "US Department of Homeland Security",
-        "count": 306
-      },
-      {
-        "name": "Siemens AG",
-        "count": 300
-      },
-      {
-        "name": "trendmicro.com",
-        "count": 291
-      },
-      {
-        "name": "QUALCOMM Incorporated",
-        "count": 261
-      },
-      {
-        "name": "JPCERT/CC",
-        "count": 242
-      },
-      {
-        "name": "sap.com",
-        "count": 198
-      },
-      {
-        "name": "Intel Corporation",
-        "count": 198
-      },
-      {
-        "name": "Samsung Electronics Co., Ltd.",
-        "count": 198
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
-        "count": 1708
+        "count": 1713
       },
       {
         "name": "Google",
@@ -655,7 +582,7 @@
       },
       {
         "name": "Linux",
-        "count": 428
+        "count": 430
       },
       {
         "name": "Adobe",
@@ -699,7 +626,7 @@
     "top_cwes": [
       {
         "cwe": "CWE-79",
-        "count": 3190
+        "count": 3192
       },
       {
         "cwe": "CWE-787",
@@ -711,11 +638,11 @@
       },
       {
         "cwe": "CWE-125",
-        "count": 851
+        "count": 854
       },
       {
         "cwe": "CWE-20",
-        "count": 763
+        "count": 778
       },
       {
         "cwe": "CWE-416",
@@ -735,15 +662,15 @@
       },
       {
         "cwe": "CWE-120",
-        "count": 477
+        "count": 480
       },
       {
         "cwe": "CWE-476",
-        "count": 424
+        "count": 425
       },
       {
         "cwe": "CWE-269",
-        "count": 372
+        "count": 374
       },
       {
         "cwe": "CWE-287",
@@ -755,7 +682,7 @@
       },
       {
         "cwe": "CWE-434",
-        "count": 346
+        "count": 347
       },
       {
         "cwe": "CWE-863",
@@ -771,11 +698,11 @@
       },
       {
         "cwe": "CWE-502",
-        "count": 297
+        "count": 298
       },
       {
         "cwe": "CWE-862",
-        "count": 296
+        "count": 297
       }
     ]
   },
@@ -783,30 +710,30 @@
     "vulnerability_status": [
       {
         "status": "Modified",
-        "count": 19872
+        "count": 19856
       },
       {
         "status": "Analyzed",
-        "count": 257
+        "count": 292
       },
       {
         "status": "Undergoing Analysis",
-        "count": 21
+        "count": 1
       }
     ],
     "cve_tags": [],
     "reference_tags": [
       {
         "tag": "Third Party Advisory",
-        "count": 44354
+        "count": 44362
       },
       {
         "tag": "Vendor Advisory",
-        "count": 30484
+        "count": 30483
       },
       {
         "tag": "Patch",
-        "count": 16253
+        "count": 16254
       },
       {
         "tag": "Exploit",
@@ -814,15 +741,15 @@
       },
       {
         "tag": "Mailing List",
-        "count": 5228
+        "count": 5229
       },
       {
         "tag": "Issue Tracking",
-        "count": 4849
+        "count": 4850
       },
       {
         "tag": "Release Notes",
-        "count": 4703
+        "count": 4710
       },
       {
         "tag": "VDB Entry",
@@ -834,15 +761,15 @@
       },
       {
         "tag": "Permissions Required",
-        "count": 1600
+        "count": 1604
       },
       {
         "tag": "Broken Link",
-        "count": 1184
+        "count": 1224
       },
       {
         "tag": "US Government Resource",
-        "count": 855
+        "count": 1064
       },
       {
         "tag": "Mitigation",
@@ -850,7 +777,7 @@
       },
       {
         "tag": "Technical Description",
-        "count": 514
+        "count": 518
       },
       {
         "tag": "Not Applicable",
@@ -862,7 +789,7 @@
       },
       {
         "tag": "Press/Media Coverage",
-        "count": 20
+        "count": 22
       },
       {
         "tag": "Tool Signature",
@@ -871,7 +798,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:20:04.117654",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:20:58.361576",
+    "data_source": "data/cache/nvd.json"
   }
 }

@@ -400,9 +400,7 @@
     "v2.0": {
       "total": 6560,
       "severity_distribution": {
-        "HIGH": 2741,
-        "MEDIUM": 3310,
-        "LOW": 509
+        "UNKNOWN": 6560
       },
       "score_distribution": {
         "7.5": 2031,
@@ -489,47 +487,18 @@
         "7.2": 1,
         "6.5": 3
       }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 1051,
+      "epss_gt_0_5": 203,
+      "epss_gt_0_9": 5
     }
   },
+  "kev": {
+    "kev_count": 2
+  },
   "vendors": {
-    "cna_assigners": [
-      {
-        "name": "MITRE Corporation",
-        "count": 6096
-      },
-      {
-        "name": "Red Hat, Inc.",
-        "count": 252
-      },
-      {
-        "name": "Microsoft Corporation",
-        "count": 124
-      },
-      {
-        "name": "Debian Project",
-        "count": 51
-      },
-      {
-        "name": "flexerasoftware.com",
-        "count": 47
-      },
-      {
-        "name": "CERT Coordination Center",
-        "count": 17
-      },
-      {
-        "name": "freebsd.org",
-        "count": 13
-      },
-      {
-        "name": "bc94ec7e-8909-4cbb-83df-d2fc9330fa88",
-        "count": 7
-      },
-      {
-        "name": "Canonical Ltd.",
-        "count": 1
-      }
-    ],
+    "cna_assigners": [],
     "cpe_vendors": [
       {
         "name": "Microsoft",
@@ -625,7 +594,7 @@
       },
       {
         "cwe": "CWE-79",
-        "count": 121
+        "count": 122
       },
       {
         "cwe": "CWE-89",
@@ -701,11 +670,11 @@
     "vulnerability_status": [
       {
         "status": "Deferred",
-        "count": 6607
+        "count": 6606
       },
       {
         "status": "Analyzed",
-        "count": 1
+        "count": 2
       }
     ],
     "cve_tags": [],
@@ -720,11 +689,11 @@
       },
       {
         "tag": "Exploit",
-        "count": 8026
+        "count": 8028
       },
       {
         "tag": "Third Party Advisory",
-        "count": 3068
+        "count": 3050
       },
       {
         "tag": "US Government Resource",
@@ -732,11 +701,11 @@
       },
       {
         "tag": "Broken Link",
-        "count": 1476
+        "count": 1454
       },
       {
         "tag": "VDB Entry",
-        "count": 842
+        "count": 836
       },
       {
         "tag": "URL Repurposed",
@@ -747,16 +716,16 @@
         "count": 232
       },
       {
-        "tag": "Mailing List",
-        "count": 134
-      },
-      {
         "tag": "Not Applicable",
         "count": 126
       },
       {
+        "tag": "Mailing List",
+        "count": 124
+      },
+      {
         "tag": "Issue Tracking",
-        "count": 52
+        "count": 46
       },
       {
         "tag": "Release Notes",
@@ -773,7 +742,7 @@
     ]
   },
   "processing_stats": {
-    "processed_at": "2025-08-02T18:18:36.162512",
-    "data_source": "data/cache/nvd.jsonl"
+    "processed_at": "2026-01-02T06:17:07.584416",
+    "data_source": "data/cache/nvd.json"
   }
 }
