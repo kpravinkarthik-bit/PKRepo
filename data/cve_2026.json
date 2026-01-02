@@ -1,0 +1,206 @@
+{
+  "year": 2026,
+  "total_cves": 48,
+  "date_data": {
+    "monthly_distribution": {
+      "1": 48,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "10": 0,
+      "11": 0,
+      "12": 0
+    },
+    "daily_analysis": {
+      "total_days": 2,
+      "avg_per_day": 24.0,
+      "highest_day": {
+        "date": "2026-01-01",
+        "count": 35
+      },
+      "lowest_day": {
+        "date": "2026-01-02",
+        "count": 13
+      },
+      "daily_counts": {
+        "2026-01-01": 35,
+        "2026-01-02": 13
+      }
+    }
+  },
+  "cvss": {
+    "v3.0": {
+      "total": 1,
+      "severity_distribution": {
+        "HIGH": 1
+      },
+      "score_distribution": {
+        "7.8": 1
+      }
+    },
+    "v3.1": {
+      "total": 12,
+      "severity_distribution": {
+        "LOW": 1,
+        "MEDIUM": 6,
+        "CRITICAL": 3,
+        "HIGH": 2
+      },
+      "score_distribution": {
+        "3.4": 1,
+        "5.3": 3,
+        "4.3": 1,
+        "6.4": 1,
+        "9.6": 1,
+        "7.5": 2,
+        "9.1": 1,
+        "6.3": 1,
+        "9.8": 1
+      }
+    },
+    "v4.0": {
+      "total": 31,
+      "severity_distribution": {
+        "MEDIUM": 27,
+        "HIGH": 3,
+        "LOW": 1
+      },
+      "score_distribution": {
+        "6.9": 12,
+        "5.3": 4,
+        "7.7": 1,
+        "5.8": 1,
+        "2.0": 1,
+        "7.3": 1,
+        "4.8": 7,
+        "5.1": 2,
+        "5.5": 1,
+        "7.4": 1
+      }
+    },
+    "unknown": {
+      "total": 4,
+      "severity_distribution": {
+        "UNKNOWN": 4
+      },
+      "score_distribution": {
+        "0.0": 4
+      }
+    },
+    "epss_summary": {
+      "epss_gt_0_1": 0,
+      "epss_gt_0_5": 0,
+      "epss_gt_0_9": 0
+    }
+  },
+  "kev": {
+    "kev_count": 0
+  },
+  "vendors": {
+    "cna_assigners": [],
+    "cpe_vendors": []
+  },
+  "cwe": {
+    "top_cwes": [
+      {
+        "cwe": "CWE-89",
+        "count": 11
+      },
+      {
+        "cwe": "CWE-74",
+        "count": 10
+      },
+      {
+        "cwe": "CWE-284",
+        "count": 4
+      },
+      {
+        "cwe": "CWE-434",
+        "count": 4
+      },
+      {
+        "cwe": "CWE-862",
+        "count": 4
+      },
+      {
+        "cwe": "CWE-119",
+        "count": 4
+      },
+      {
+        "cwe": "CWE-404",
+        "count": 3
+      },
+      {
+        "cwe": "CWE-416",
+        "count": 2
+      },
+      {
+        "cwe": "CWE-918",
+        "count": 2
+      },
+      {
+        "cwe": "CWE-94",
+        "count": 2
+      },
+      {
+        "cwe": "CWE-295",
+        "count": 1
+      },
+      {
+        "cwe": "CWE-204",
+        "count": 1
+      },
+      {
+        "cwe": "CWE-502",
+        "count": 1
+      },
+      {
+        "cwe": "CWE-352",
+        "count": 1
+      },
+      {
+        "cwe": "CWE-863",
+        "count": 1
+      },
+      {
+        "cwe": "CWE-269",
+        "count": 1
+      },
+      {
+        "cwe": "CWE-763",
+        "count": 1
+      },
+      {
+        "cwe": "CWE-78",
+        "count": 1
+      },
+      {
+        "cwe": "CWE-913",
+        "count": 1
+      },
+      {
+        "cwe": "CWE-400",
+        "count": 1
+      }
+    ]
+  },
+  "metadata": {
+    "vulnerability_status": [
+      {
+        "status": "Received",
+        "count": 48
+      }
+    ],
+    "cve_tags": [],
+    "reference_tags": []
+  },
+  "processing_stats": {
+    "processed_at": "2026-01-02T06:22:16.153618",
+    "data_source": "data/cache/nvd.json"
+  }
+}
